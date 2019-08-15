@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Example</title>
+      <title>Tic Tac Toe</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Do not add `link` tags-->
@@ -12,6 +12,55 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>Browser Template</h1>
+      <h1>Tic Tac Toe</h1>
+
+      <button id="restart">Restart</button>
+
+           <div id="display">
+             <h3 id"sign-up">Sign up!</h3>
+             <input type="text" name="credentials[email]" placeholder="Email">
+             <input type="password" name="credentials[password]" placeholder="password">
+             <input type="password" name="credentials[password_confirmation]" placeholder="Confirm password">
+             <input type="submit" value="Sign up!">
+           </div>
+
+                <div id="display">
+                  <h3 id"sign-in">Sign in!</h3>
+                  <input type="text" name="credentials[email]" placeholder="Email">
+                  <input type="password" name="credentials[password]" placeholder="password">
+                  <input type="submit" value="Sign In!">
+                </div>
+
+                     <div id="display">
+                       <h3 id"sign-out">Sign out!</h3>
+                        <input type="submit" value="Sign Out!">
+                     </div>
+
+                          <div id="display">
+                            <h3 id"sign-in">Change password</h3>
+                            <input type="password" name="passwords[old]" placeholder="Current password">
+                            <input type="password" name="passwords[new]" placeholder="New password">
+                            <input type='submit' value='Change password'>
+                          </div>
+
+             <div class="row game">
+               <div class="col-4 box" id="0"></div>
+               <div class="col-4 box" id="1"></div>
+               <div class="col-4 box" id="2"></div>
+
+
+               <div class="col-4 box" id="3"></div>
+               <div class="col-4 box" id="4"></div>
+               <div class="col-4 box" id="5"></div>
+
+
+               <div class="col-4 box" id="6"></div>
+               <div class="col-4 box" id="7"></div>
+               <div class="col-4 box" id="8"></div>
+             </div>
+
+             </div>
+           </div>
+         </div>
     </body>
 </html>
