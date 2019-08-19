@@ -3,6 +3,4 @@
 const store = {
 }
 
-module.exports = {
-store
-}
+module.exports = store

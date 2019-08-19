@@ -1,7 +1,7 @@
 'use strict'
 
 const config = require('../config')
- const store = require('../store')
+const store = require('../store')
 
 const signUp = function (data) {
   return $.ajax({
@@ -38,59 +38,10 @@ const signOut = function () {
     }
   })
 }
-const getGames = function () {
-  return $.ajax({
-    url: config.apiUrl + '/games',
-    method: 'GET',
-    headers: {
-      Authorization: 'Token token=' + store.user.token
-    }
-  })
-}
-const getPostGames = function () {
-  return $.ajax({
-    url: config.apiUrl + '/games',
-    method: 'POST',
-    headers: {
-      Authorization: 'Token token=' + store.user.token
-    }
-  })
-}
-const getGamesIds = function () {
-  return $.ajax({
-    url: config.apiUrl + '/games/:id',
-    method: 'GET',
-    headers: {
-      Authorization: 'Token token=' + store.user.token
-    }
-  })
-}
-const patchGamesIds = function () {
-  return $.ajax({
-    url: config.apiUrl + '/games/:id',
-    method: 'PATCH',
-    headers: {
-      Authorization: 'Token token=' + store.user.token
-    }
-  })
-}
-const getGamesIdsWatch = function () {
-  return $.ajax({
-    url: config.apiUrl + '/games/:id/watch',
-    method: 'GET',
-    headers: {
-      Authorization: 'Token token=' + store.user.token
-    }
-  })
-}
+
 module.exports = {
   signUp,
   signIn,
   changePassword,
-  signOut,
-  getGames,
-  getPostGames,
-  getGamesIds,
-  patchGamesIds,
-  getGamesIdsWatch
+  signOut
 }

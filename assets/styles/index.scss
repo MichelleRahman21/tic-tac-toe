@@ -1,9 +1,35 @@
 @import '~bootstrap/scss/bootstrap';
-.box {
-  height: 50px;
-  border: 1px solid;
+@import url('https://fonts.googleapis.com/css?family=Rammetto+One&display=swap');
 
+$body-bg: #9cb6ff;
+$maincolor: #eb1277;
+$colorcontainer: #ac93b3;
+$blueA: #89a3f5;
+$bg: #f6dfff;
+
+body {
+  color: $maincolor;
+  background-color: $bg;
 }
+
+h1{
+  font-family: 'Rammetto One', cursive;
+  text-align: center;
+  font-size: 100px
+}
+
+.box {
+  border: 8px solid;
+  height: 100px;
+  width: 100px;
+  background-color: $blueA;
+}
+
 .game-board {
   margin-top: 30px;
+}
+
+.container {
+color: $colorcontainer;
+
 }

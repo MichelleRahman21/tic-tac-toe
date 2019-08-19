@@ -1,13 +1,30 @@
-'use strict'
 
-const onClickBox = function (event) {
-  const boxText = $(event.target).text()
-  if (!boxText) {
-    $(event.target).text('O')
-    console.log('You can play')
-  }
+const api = require('./api.js')
+const ui = require('./ui.js')
 
+const newGame = function (event) {
+  event.preventDefault()
+
+  api.createGame()
+    .then(ui.createGameSuccess)
+    .catch(ui.createGameFail)
 }
+
+const onGetGames = function (event) {
+  event.preventDefault()
+
+  api.getGames()
+    .then(ui.getGamesSuccess)
+    .catch(ui.getGamesFail)
+}
+
+const addHandlers = function () {
+  $('#new-game').on('click', newGame).hide()
+  $('.status').on('click', onGetGames).hide()
+  $('.container').hide()
+  $('.your-turn').hide()
+}
+
 module.exports = {
-  onClickBox
+  addHandlers
 }
