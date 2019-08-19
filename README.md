@@ -70,4 +70,4 @@ I decided to begin with the user authentication because I felt more comfortable,
 -Command Line running grunt serve ( must of the time ) to test my project on the browser.
 -GitHub : Commit, Merge, create Issues and Deploy once the project was done.
 
-You can play my [Tic-Tic-Tac-Tac-Toe-Toe] (mylink)
+You can play my [Tic-Tic-Tac-Tac-Toe-Toe] (https://michellerahman21.github.io/tic-tac-toe/)
