@@ -23,6 +23,10 @@ h1{
   height: 100px;
   width: 100px;
   background-color: $blueA;
+  font-size: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .game-board {
