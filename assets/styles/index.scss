@@ -1,5 +1,6 @@
 @import '~bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css?family=Rammetto+One&display=swap');
+@import '~animated.css'
 
 $body-bg: #9cb6ff;
 $maincolor: #eb1277;
@@ -23,6 +24,7 @@ h1{
   height: 100px;
   width: 100px;
   background-color: $blueA;
+  color: $maincolor;
   font-size: 70px;
   display: flex;
   align-items: center;
