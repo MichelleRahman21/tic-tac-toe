@@ -30,7 +30,8 @@ const signInFailure = function (data) {
   $('form').trigger('reset')
 }
 const changePasswordSuccess = function (data) {
-  $('.change-your-password').text('successfully changed password!')
+  // store.user = data.use
+  $('.change-password-message').text('successfully changed password!')
   $('form').trigger('reset')
 }
 const changePasswordFailure = function (data) {
