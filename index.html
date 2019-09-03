@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Tic-Tac-Toe</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="UTF-8">
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body>
+
+      <h1>Tic-Tic-Tac-Tac-Toe-Toe!</h1>
+      <section class="buttons">
+              <div class="modal fade" id="change-password" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Change Password</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+
+                      <form id="change-password-form">
+                        <div class="change-password-message"></div>
+                        <input type="password" name="passwords[old]" placeholder="old password">
+                        <input type="password" name="passwords[new]" placeholder="new password">
+                        <input type="submit" value="Change Password">
+                      </form>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+<button id="change-your-password" type="button" class="btn btn-primary" data-toggle="modal" data-target="#change-password"> Change your password </button>
+              <form id="sign-out">
+                <button type="submit">Sign out</button>
+              </form>
+
+              <form id="new-game">
+                <button type="submit">New Game</button>
+              </form>
+
+              <button type="button" class="status">
+                Status
+              </button>
+
+              <div class="modal fade" id="statsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Stats</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="user-status"></div>
+                    </div>
+                    <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </section>
+
+
+          <section class="d-flex justify-content-center">
+              <div class="game-changes"></div>
+              <div class="your-turn">x's turn!</div>
+          </section>
+
+
+          <section class="gameboard">
+
+            <div class="container">
+              <div class="game-board">
+                <div class="row d-flex justify-content-center">
+                  <div class="col-4 col-md-2 box box0 left-top" data-id='0'></div>
+                  <div class="col-4 col-md-2 box box1 right-top" data-id='1'></div>
+                  <div class="col-4 col-md-2 box box2 middle-top" data-id='2'></div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                  <div class="col-4 col-md-2 box box3 left-middle" data-id='3'></div>
+                  <div class="col-4 col-md-2 box box4 center-middle" data-id='4'></div>
+                  <div class="col-4 col-md-2 box box5 right-middle" data-id='5'></div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                  <div class="col-4 col-md-2 box box6 left-bottom" data-id='6'></div>
+                  <div class="col-4 col-md-2 box box7 center-bottom" data-id='7'></div>
+                  <div class="col-4 col-md-2 box box8 right-bottom" data-id='8'></div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+            <section class="d-flex justify-content-center">
+              <div class="user-message"></div>
+            </section>
+            <br>
+
+            <div class="sign-in-container">
+
+              <form class="auth-form" id="sign-up">
+                <fieldset>
+                  <legend>Sign Up</legend>
+                  <input type="email" class="form-control" name="credentials[email]" placeholder="Email">
+                  <input type="password" class="form-control" name="credentials[password]" placeholder="Password">
+                  <input type="password" class="form-control" name="credentials[password_confirmation]" placeholder="Password Confirmation">
+                  <button type="submit">sign up</button>
+                  <p>Already have an account? <a class="sign-in-link" href="#">Click here to sign in</a>.</p>
+                </fieldset>
+              </form>
+
+              <form class="auth-form" id="sign-in">
+                <fieldset>
+                  <legend>Sign In</legend>
+                  <input type="email" class="form-control" name="credentials[email]" placeholder="Email">
+                  <input type="password" class="form-control" name="credentials[password]" placeholder="Password">
+                  <button type="submit" class="btn btn-primary">sign in</button>
+                  <p>Join us! <a class="sign-up-link" href="#">Click here to sign up</a>.</p>
+                </fieldset>
+              </form>
+            </div>
+
+          <br>
+        </body>
+      </html>
